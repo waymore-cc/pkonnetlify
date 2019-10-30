@@ -14,9 +14,9 @@ export default () => (
 
     <h1>GitHub Auth Demo:</h1>
     <p>
-      <Link to="#" id="login">
+      <a href="#" id="login">
         Authenticate
-      </Link>
+      </a>
     </p>
     <p id="output"></p>
   </div>
