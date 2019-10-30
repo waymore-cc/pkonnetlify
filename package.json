@@ -18,6 +18,8 @@
     "gatsby-plugin-netlify-cms": "^4.1.26",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-react-svg": "^2.1.2",
+    "gatsby-source-filesystem": "^2.1.35",
+    "gatsby-transformer-remark": "^2.6.32",
     "https-proxy-agent": "^3.0.0",
     "netlify-auth-providers": "^1.0.0-alpha5",
     "netlify-cms-app": "^2.9.7",
