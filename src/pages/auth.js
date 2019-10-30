@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { withPrefix, Link } from "gatsby"
 
 export default () => (
-  <div className={styles.siteInner}>
+  <div>
     <Helmet>
       <script
         src={withPrefix("https://unpkg.com/netlify-auth-providers")}
