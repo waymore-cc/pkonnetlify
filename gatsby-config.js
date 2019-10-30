@@ -6,4 +6,16 @@
 
 module.exports = {
   /* Your site config here */
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-netlify-cms",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
+  ],
 }
