@@ -1,8 +1,11 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
 import styles from "./index.module.css"
 import Header from "../components/header.js"
+import Button from "../components/button.js"
 
 class RootIndex extends React.Component {
   render() {
@@ -29,8 +32,12 @@ class RootIndex extends React.Component {
             <span className={styles.sloganBold}>fate</span>
           </p>
           <div className={styles.slogan_buttons}>
-            <button>start a project</button>
-            <button className={styles.buttonGold}>more...</button>
+            <Link to="/">
+              <Button>start a project</Button>
+            </Link>
+            <Link to="/about" sx={{ pl: 64 }}>
+              <Button>...more</Button>
+            </Link>
           </div>
         </div>
       </div>

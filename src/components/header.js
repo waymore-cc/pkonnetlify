@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import Link from "gatsby-link"
 import styles from "../pages/index.module.css"
 import Logo from "../assets/logo.svg"
@@ -24,7 +25,7 @@ function Header() {
             <Link to="/faq">FAQ</Link>
           </li>
           <li>
-            <button>contact me</button>
+            <button sx={{ variant: "buttons.secondary" }}>contact me</button>
           </li>
         </ul>
       </nav>
