@@ -62,7 +62,7 @@ function Nav() {
           }}
         >
           <Link
-            to="/faq"
+            to="/contact"
             sx={{
               color: "text",
               pl: [3, 4, 4],

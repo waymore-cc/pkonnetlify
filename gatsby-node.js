@@ -1,5 +1,9 @@
 const path = require(`path`)
 
+require("dotenv").config({
+  path: `.env.${process.env.GATSBY_APP_SITE_RECAPTCHA_KEY}`,
+})
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 

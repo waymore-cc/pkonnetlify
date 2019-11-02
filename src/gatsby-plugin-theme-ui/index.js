@@ -1,5 +1,3 @@
-// const buttonColor = "text"
-
 export default {
   breakpoints: ["40em", "52em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
@@ -11,6 +9,7 @@ export default {
     primary: "#07c",
     link: "#157aff",
     logo: "#282828",
+    brand: "#FC8F9B",
     modes: {
       dark: {
         text: "#f4f4f4",
@@ -19,6 +18,7 @@ export default {
         primary: "#0cf",
         link: "#157aff",
         logo: "#c3c3c3",
+        brand: "#FC8F9B",
       },
     },
   },
@@ -106,9 +106,6 @@ export default {
         height: "calc(100% + 3px)",
         top: "0.45em",
         left: "0.45em",
-        // backgroundColor: "#D5D717",
-        // backgroundImage:
-        //   "linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)",
         backgroundImage: "linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)",
         zIndex: -1,
         transition: "0.15s ease-out",
@@ -145,8 +142,8 @@ export default {
       fontSize: [3, 4, 4],
       cursor: "pointer",
       ":hover": {
-        color: "background",
-        background: "text",
+        color: "text",
+        bg: "brand",
         fontWeight: 300,
       },
     },
@@ -154,6 +151,10 @@ export default {
   styles: {
     a: {
       color: "link",
+      fontDecoration: "none",
+    },
+    p: {
+      fontSize: 2,
     },
     li: {
       listStyleType: "none",

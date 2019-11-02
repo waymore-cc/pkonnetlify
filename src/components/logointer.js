@@ -19,7 +19,7 @@ function Logointer() {
           position: "absolute",
           top: 0,
           left: 0,
-          fill: "#FC8F9B",
+          fill: "brand",
         }}
       ></Logok>
       <Logop

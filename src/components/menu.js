@@ -58,7 +58,7 @@ const Menu = ({ open, ...props }) => {
       <Link sx={{ color: "background" }} to="/about" tabIndex={tabIndex}>
         About
       </Link>
-      <Link sx={{ color: "background" }} to="/faq" tabIndex={tabIndex}>
+      <Link sx={{ color: "background" }} to="/contact" tabIndex={tabIndex}>
         Contact
       </Link>
     </StyledMenu>
