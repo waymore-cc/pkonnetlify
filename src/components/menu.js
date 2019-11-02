@@ -9,9 +9,8 @@ const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
-  height: 100vh;
   text-align: left;
-  padding: 2rem;
+  padding: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -20,6 +19,7 @@ const StyledMenu = styled.nav`
 
   @media (max-width: 832px) {
     width: 100%;
+    height: 100vh;
   }
 
   a {

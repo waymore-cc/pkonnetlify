@@ -5,7 +5,13 @@ import Header from "../components/header.js"
 import { Styled } from "theme-ui"
 
 export default ({ children }) => (
-  <Styled.div sx={{ mx: "auto", maxWidth: 80 + "%", fontFamily: "body" }}>
+  <Styled.div
+    sx={{
+      mx: "auto",
+      maxWidth: [90 + "%", 80 + "%", 80 + "%"],
+      fontFamily: "body",
+    }}
+  >
     <Helmet />
     <Header></Header>
     {children}
