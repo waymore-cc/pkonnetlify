@@ -6,7 +6,7 @@ export default () => (
   <Layout>
     <Styled.h1>Contact me</Styled.h1>
     <Styled.h3>
-      pawel.kamyszek@waymore.cc
+      pawel.kamyszek@waymore.cc-
       <br />
     </Styled.h3>
   </Layout>
