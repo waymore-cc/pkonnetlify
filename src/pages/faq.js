@@ -1,10 +1,13 @@
 import React from "react"
-import Header from "../components/header"
-import Button from "../components/button.js"
+import Layout from "../components/layout.js"
+import { Styled } from "theme-ui"
 
 export default () => (
-  <main>
-    <Header></Header>
-    <Button>Siema</Button>
-  </main>
+  <Layout>
+    <Styled.h1>Contact me</Styled.h1>
+    <Styled.h3>
+      pawel.kamyszek@waymore.cc
+      <br />
+    </Styled.h3>
+  </Layout>
 )

@@ -1,46 +1,52 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import Helmet from "react-helmet"
 import Link from "gatsby-link"
-import styles from "./index.module.css"
-import Header from "../components/header.js"
 import Button from "../components/button.js"
-
+import Layout from "../components/layout.js"
+import { Styled } from "theme-ui"
 class RootIndex extends React.Component {
   render() {
     return (
-      <div className={styles.siteInner}>
-        <Helmet />
-        <Header></Header>
-
-        <div className={styles.content}>
-          <h1 className={styles.slogan}>
-            this is the playground where{" "}
-            <span className={styles.sloganBold}>
-              {" "}
-              <Link to="#"> chance plays fate</Link>
+      <Layout>
+        <div>
+          <Styled.h1 sx={{ fontWeight: 500, my: [16, 32, 48] }}>
+            <span sx={{ fontWeight: "body" }}>
+              this is the playground where {""}
             </span>
-            *
-          </h1>
-
-          <p className={styles.sloganSub}>
-            <span className={styles.sloganBold}>*chance</span> is you didn’t get
-            here by accident,
-            <br /> now if that’s the case – let me help you{" "}
-            <span className={styles.sloganBold}>design</span> your{" "}
-            <span className={styles.sloganBold}>fate</span>
-          </p>
-          <div className={styles.slogan_buttons}>
-            <Link to="/">
-              <Button>start a project</Button>
+            <Link
+              to="/"
+              sx={{
+                textDecoration: "underline",
+                color: "text",
+                ":hover": { color: "link" },
+              }}
+            >
+              chance plays fate
             </Link>
-            <Link to="/about" sx={{ pl: 64 }}>
-              <Button>...more</Button>
+            *
+          </Styled.h1>
+
+          <Styled.h3
+            sx={{
+              my: [16, 32, 48],
+              maxWidth: [100 + "%", 70 + "%", 60 + "%"],
+            }}
+          >
+            *chance {""}
+            <span sx={{ fontWeight: "body" }}>
+              is you didn’t get here by accident, now if that’s the case – let
+              me help you{" "}
+            </span>
+            design<span sx={{ fontWeight: "body" }}> your</span> fate
+          </Styled.h3>
+          <div>
+            <Link to="/">
+              <Button>Collaborate</Button>
             </Link>
           </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }

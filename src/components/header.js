@@ -1,42 +1,35 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Link from "gatsby-link"
-import styles from "../pages/index.module.css"
-import Logo from "../assets/logo.svg"
+import Nav from "../components/nav.js"
+import { ColorMode } from "theme-ui"
+import Logointer from "../components/logointer.js"
+import Resnav from "../components/resnav.js"
 
 function Header() {
   return (
-    <header className="header">
-      <div className={styles.logobox}>
-        <Logo className={styles.logo}>Logo</Logo>
+    <header
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        fontSize: [1, 2, 2],
+        width: 100 + "%",
+        py: [3, 4, 5],
+        color: "text",
+      }}
+    >
+      <ColorMode />
+      <div
+        sx={{
+          height: 100 + "%",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Logointer sx={{ maxHeight: [48, 64, 80], maxWidth: [48, 64, 80] }} />
       </div>
-      <nav className={styles.nav}>
-        <ul>
-          <li>
-            <Link to="/">.pawelkamyszek</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/faq">FAQ</Link>
-          </li>
-          <li>
-            <button sx={{ variant: "buttons.secondary" }}>contact me</button>
-          </li>
-        </ul>
-      </nav>
 
-      <div className={styles.mobileMenu}>
-        <div>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+      <Nav sx={{ display: ["none", "block", "block"] }} />
+      <Resnav />
     </header>
   )
 }

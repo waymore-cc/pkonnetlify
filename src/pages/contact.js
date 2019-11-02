@@ -1,8 +1,13 @@
 import React from "react"
-import Header from "../components/header"
+import Layout from "../components/layout.js"
+import { Styled } from "theme-ui"
 
 export default () => (
-  <main>
-    <Header></Header>
-  </main>
+  <Layout>
+    <Styled.h1>Contact me</Styled.h1>
+    <Styled.h3>
+      pawel.kamyszek@waymore.cc
+      <br />
+    </Styled.h3>
+  </Layout>
 )

@@ -10,6 +10,13 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-theme-ui",
+    "gatsby-theme-ui-blog",
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false,
+      },
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

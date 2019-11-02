@@ -2,5 +2,5 @@
 import { jsx } from "theme-ui"
 
 export default props => (
-  <button sx={{ variant: "buttons.primary" }}>{props.children}</button>
+  <button sx={{ variant: "buttons.secondary" }}>{props.children}</button>
 )
