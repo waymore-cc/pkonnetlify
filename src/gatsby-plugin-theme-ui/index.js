@@ -13,7 +13,7 @@ export default {
     logo: "#282828",
     modes: {
       dark: {
-        text: "#fff",
+        text: "#f4f4f4",
         background: "#282828",
         menu: "#EAB740",
         primary: "#0cf",
@@ -23,9 +23,9 @@ export default {
     },
   },
   fonts: {
-    body: "Roboto, sans-serif",
-    heading: "inherit",
-    monospace: "Roboto, sans-serif",
+    body: "-apple-system, sans-serif",
+    heading: "Helvetica Neue",
+    monospace: "Quattrocento Sans, sans-serif",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: {
@@ -90,7 +90,7 @@ export default {
       color: "text",
       position: "relative",
       paddingX: [3, 3, 4],
-      paddingY: [2, 2, 10],
+      paddingY: [12, 12, 12],
       zIndex: 1,
       background: "none",
       fontWeight: ["medium", "medium", "fat"],
@@ -130,6 +130,26 @@ export default {
         cursor: "pointer",
       },
     },
+    cta: {
+      color: "text",
+      position: "relative",
+      paddingX: [32, 32, 32],
+      paddingY: [10, 10, 10],
+      zIndex: 1,
+      background: "transparent",
+      fontWeight: 300,
+      borderWidth: ["1px", "1px", "2px"],
+      borderColor: "text",
+      borderStyle: "solid",
+      borderImage: "initial",
+      fontSize: [3, 4, 4],
+      cursor: "pointer",
+      ":hover": {
+        color: "background",
+        background: "text",
+        fontWeight: 300,
+      },
+    },
   },
   styles: {
     a: {
@@ -139,11 +159,11 @@ export default {
       listStyleType: "none",
     },
     h1: {
-      fontSize: [4, 5, 7],
+      fontSize: [6, 7, 80],
     },
     h3: {
-      fontSize: [2, 3, 4],
-      fontWeight: "medium",
+      fontSize: [3, 4, 5],
+      fontWeight: "bold",
     },
   },
 }

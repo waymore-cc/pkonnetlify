@@ -10,39 +10,41 @@ class RootIndex extends React.Component {
     return (
       <Layout>
         <div>
-          <Styled.h1 sx={{ fontWeight: 500, my: [16, 32, 48] }}>
-            <span sx={{ fontWeight: "body" }}>
-              this is the playground where {""}
-            </span>
+          <Styled.h1
+            sx={{
+              mb: 4,
+              mt: 24,
+              width: [96 + "%", 100 + "%", 100 + "%"],
+            }}
+          >
+            This is the playground where {""}
             <Link
               to="/"
               sx={{
-                textDecoration: "underline",
                 color: "text",
+                borderBottom: ["none", "solid 2px text", "solid 2px text"],
+                pb: "8px",
                 ":hover": { color: "link" },
               }}
             >
-              chance plays fate
+              chance plays fate.
             </Link>
-            *
           </Styled.h1>
 
           <Styled.h3
             sx={{
-              my: [16, 32, 48],
+              my: [32, 32, 48],
               maxWidth: [100 + "%", 70 + "%", 60 + "%"],
             }}
           >
-            *chance {""}
-            <span sx={{ fontWeight: "body" }}>
-              is you didn’t get here by accident, now if that’s the case – let
-              me help you{" "}
+            <span sx={{ fontWeight: "300" }}>
+              I help brands create amazing digital products and experiences.
+              Designing great UX/UI and leveraging the lean approach.
             </span>
-            design<span sx={{ fontWeight: "body" }}> your</span> fate
           </Styled.h3>
           <div>
             <Link to="/">
-              <Button>Collaborate</Button>
+              <Button>let's talk</Button>
             </Link>
           </div>
         </div>

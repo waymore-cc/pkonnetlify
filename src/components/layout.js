@@ -8,7 +8,7 @@ export default ({ children }) => (
   <Styled.div
     sx={{
       mx: "auto",
-      maxWidth: [90 + "%", 80 + "%", 80 + "%"],
+      maxWidth: [85 + "%", 80 + "%", 80 + "%"],
       fontFamily: "body",
     }}
   >

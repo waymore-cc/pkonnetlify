@@ -13,8 +13,9 @@ function Header() {
         alignItems: "center",
         fontSize: [1, 2, 2],
         width: 100 + "%",
-        py: [3, 4, 5],
+        py: [4, 4, 5],
         color: "text",
+        borderBottom: ["solid 1px text", "none", "none"],
       }}
     >
       <ColorMode />
