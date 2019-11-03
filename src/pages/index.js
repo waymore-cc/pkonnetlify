@@ -22,7 +22,8 @@ class RootIndex extends React.Component {
               to="/"
               sx={{
                 color: "text",
-                borderBottom: ["none", "solid 2px text", "solid 2px text"],
+                borderBottom: ["none", "solid 2px", "solid 2px"],
+                borderColor: "text",
                 pb: "8px",
                 ":hover": { color: "link" },
               }}
@@ -43,7 +44,7 @@ class RootIndex extends React.Component {
             </span>
           </Styled.h3>
           <div>
-            <Link to="/">
+            <Link to="/contact">
               <Button>let's talk</Button>
             </Link>
           </div>

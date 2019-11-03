@@ -151,7 +151,7 @@ export default {
   styles: {
     a: {
       color: "link",
-      fontDecoration: "none",
+      textDecoration: "none",
     },
     p: {
       fontSize: 2,
