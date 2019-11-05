@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Link from "gatsby-link"
+import StyledLink from "../components/styledlink.js"
 import { Styled } from "theme-ui"
 import { useColorMode } from "theme-ui"
 import Nightmode from "../assets/night-mode.svg"
@@ -23,7 +23,7 @@ function Nav() {
             display: ["none", "flex", "flex"],
           }}
         >
-          <Link
+          <StyledLink
             to="/"
             sx={{
               color: "text",
@@ -35,14 +35,14 @@ function Nav() {
             }}
           >
             Work
-          </Link>
+          </StyledLink>
         </S.li>
         <S.li
           sx={{
             display: ["none", "flex", "flex"],
           }}
         >
-          <Link
+          <StyledLink
             to="/about"
             sx={{
               color: "text",
@@ -54,14 +54,14 @@ function Nav() {
             }}
           >
             About
-          </Link>
+          </StyledLink>
         </S.li>
         <S.li
           sx={{
             display: ["none", "flex", "flex"],
           }}
         >
-          <Link
+          <StyledLink
             to="/contact"
             sx={{
               color: "text",
@@ -73,7 +73,7 @@ function Nav() {
             }}
           >
             Contact
-          </Link>
+          </StyledLink>
         </S.li>
       </ul>
       <div sx={{ pl: [3, 4, 4], display: "flex", alignItems: "center" }}>

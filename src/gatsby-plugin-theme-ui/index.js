@@ -29,6 +29,7 @@ export default {
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: {
+    thin: 300,
     body: 400,
     medium: 500,
     fat: 600,

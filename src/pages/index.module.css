@@ -6,7 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -337,23 +336,6 @@ template {
  */
 [hidden] {
   display: none;
-}
-
-/*
- * THE ACTUAL CSS OF THE WEBSITE
- */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  height: 100vh;
-}
-
-a {
-  text-decoration: none;
-  color: #157aff;
 }
 
 /*# sourceMappingURL=index.module.css.map */

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import Link from "gatsby-link"
+import StyledLink from "../components/styledlink.js"
 import Button from "../components/button.js"
 import Layout from "../components/layout.js"
 import { Styled } from "theme-ui"
@@ -18,7 +18,7 @@ class RootIndex extends React.Component {
             }}
           >
             This is the playground where {""}
-            <Link
+            <StyledLink
               to="/"
               sx={{
                 color: "text",
@@ -29,7 +29,7 @@ class RootIndex extends React.Component {
               }}
             >
               chance plays fate.
-            </Link>
+            </StyledLink>
           </Styled.h1>
 
           <Styled.h3
@@ -44,9 +44,9 @@ class RootIndex extends React.Component {
             </span>
           </Styled.h3>
           <div>
-            <Link to="/contact">
+            <StyledLink to="/contact">
               <Button>let's talk</Button>
-            </Link>
+            </StyledLink>
           </div>
         </div>
       </Layout>
