@@ -4,7 +4,7 @@ import StyledLink from "../components/styledlink.js"
 import { Styled } from "theme-ui"
 import { useColorMode } from "theme-ui"
 import Nightmode from "../assets/night-mode.svg"
-
+import Lightmode from "../assets/light-mode.svg"
 const S = Styled
 
 function Nav() {
@@ -25,6 +25,7 @@ function Nav() {
         >
           <StyledLink
             to="/"
+            activeStyle={{ textDecoration: "underline" }}
             sx={{
               color: "text",
               pl: [3, 4, 4],
@@ -44,6 +45,7 @@ function Nav() {
         >
           <StyledLink
             to="/about"
+            activeStyle={{ textDecoration: "underline" }}
             sx={{
               color: "text",
               pl: [3, 4, 4],
@@ -63,6 +65,7 @@ function Nav() {
         >
           <StyledLink
             to="/contact"
+            activeStyle={{ textDecoration: "underline" }}
             sx={{
               color: "text",
               pl: [3, 4, 4],
@@ -101,7 +104,7 @@ function Nav() {
               }}
             />
           ) : (
-            <Nightmode
+            <Lightmode
               sx={{
                 width: 22,
                 height: 22,

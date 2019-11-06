@@ -1,8 +1,8 @@
 import React from "react"
 import nightmode from "../assets/night-mode.svg"
 
-function Logo() {
-  return <img src={nightmode} alt="Logo" />
+function Nightmode() {
+  return <img src={nightmode} alt="nightmode" />
 }
 
-export default nightmode
+export default Nightmode

@@ -63,15 +63,29 @@ export default function Contact() {
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <Label sx={{ mb: 2 }}>Your name:</Label>
-          <Input type="text" name="name" onChange={handleChange} />
+          <Input
+            sx={{ borderRadius: 0 }}
+            type="text"
+            name="name"
+            onChange={handleChange}
+          />
         </p>
         <p>
           <Label sx={{ mb: 2 }}>Your email:</Label>
-          <Input type="email" name="email" onChange={handleChange} />
+          <Input
+            sx={{ borderRadius: 0 }}
+            type="email"
+            name="email"
+            onChange={handleChange}
+          />
         </p>
         <p>
           <Label sx={{ mb: 2 }}>Tell me about your project:</Label>
-          <Textarea name="message" onChange={handleChange} />
+          <Textarea
+            sx={{ borderRadius: 0 }}
+            name="message"
+            onChange={handleChange}
+          />
         </p>
         <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
         <p>
