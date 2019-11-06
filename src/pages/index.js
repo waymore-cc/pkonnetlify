@@ -55,6 +55,7 @@ class RootIndex extends React.Component {
           <Box
             sx={{
               flex: ["0 100%", "0 48%", "0 46%"],
+              color: "#282828",
               border: "1px solid",
               p: 3,
               bg: "#dedef0",
@@ -76,6 +77,7 @@ class RootIndex extends React.Component {
             sx={{
               flex: ["0 100%", "0 48%", "0 46%"],
               ml: "auto",
+              color: "#282828",
               border: "1px solid",
               p: 3,
               bg: "#e6f8f9",
