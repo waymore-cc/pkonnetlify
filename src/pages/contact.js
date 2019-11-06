@@ -7,10 +7,9 @@ import { Flex, Box } from "@theme-ui/components"
 
 export default () => (
   <Layout sx={{ m: 4 }}>
-    <Styled.h1 sx={{ mt: 24 }}>Let's talk</Styled.h1>
-
     <Flex sx={{ flexWrap: "wrap" }}>
       <Box pr={5} sx={{ flexGrow: 1 }}>
+        <Styled.h2 sx={{ mt: 24 }}>Let's talk</Styled.h2>
         <Styled.h3>
           <span sx={{ fontWeight: "300" }}>pawel.kamyszek@waymore.cc</span>
         </Styled.h3>

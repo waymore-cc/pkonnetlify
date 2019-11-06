@@ -75,7 +75,7 @@ export default function Contact() {
         </p>
         <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
         <p>
-          <Button type="submit">Send</Button>
+          <Button type="submit">send</Button>
         </p>
       </form>
     </div>

@@ -19,12 +19,13 @@ class RootIndex extends React.Component {
           >
             This is the playground where {""}
             <StyledLink
-              to="/"
+              to="/contact"
               sx={{
                 color: "text",
                 borderBottom: ["none", "solid 2px", "solid 2px"],
                 borderColor: "text",
                 pb: "8px",
+                transition: "0.1s ease-in-out",
                 ":hover": { color: "link" },
               }}
             >

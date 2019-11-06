@@ -5,20 +5,20 @@ export default {
   colors: {
     text: "#282828",
     background: "#f4f4f4",
-    menu: "#EAB740",
+    menu: "#046e55",
     primary: "#07c",
     link: "#157aff",
     logo: "#282828",
-    brand: "#FC8F9B",
+    brand: "#046e55",
     modes: {
       dark: {
         text: "#f4f4f4",
         background: "#282828",
-        menu: "#EAB740",
+        menu: "#046e55",
         primary: "#0cf",
         link: "#157aff",
         logo: "#c3c3c3",
-        brand: "#FC8F9B",
+        brand: "#046e55",
       },
     },
   },
@@ -129,12 +129,12 @@ export default {
       },
     },
     cta: {
-      color: "text",
+      color: "background",
       position: "relative",
       paddingX: [32, 32, 32],
       paddingY: [10, 10, 10],
       zIndex: 1,
-      background: "transparent",
+      bg: "text",
       fontWeight: 300,
       borderWidth: ["1px", "1px", "2px"],
       borderColor: "text",
@@ -142,10 +142,12 @@ export default {
       borderImage: "initial",
       fontSize: [3, 4, 4],
       cursor: "pointer",
+      transition: "0.15s ease-in-out",
       ":hover": {
         color: "text",
-        bg: "brand",
+        bg: "transparent",
         fontWeight: 300,
+        transition: "0.15s ease-in-out",
       },
     },
   },
@@ -155,13 +157,16 @@ export default {
       textDecoration: "none",
     },
     p: {
-      fontSize: 2,
+      fontSize: 3,
     },
     li: {
       listStyleType: "none",
     },
     h1: {
       fontSize: [6, 7, 80],
+    },
+    h2: {
+      fontSize: [4, 5, 6],
     },
     h3: {
       fontSize: [3, 4, 5],
