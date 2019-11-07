@@ -92,7 +92,7 @@ class RootIndex extends React.Component {
             <Styled.h3 sx={{ mt: 1, mb: 3 }}>Design System</Styled.h3>
             <Styled.p>
               We work on an awesome Design System and I honestly can't wait to
-              tell you more about it. You'll just have to wait a little bit more{" "}
+              tell you more about it. Please, just be patient{" "}
               <span role="img" aria-label="rocket emoji">
                 ⏳
               </span>
