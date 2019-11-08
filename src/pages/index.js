@@ -51,7 +51,7 @@ class RootIndex extends React.Component {
             </StyledLink>
           </div>
         </div>
-        <Flex sx={{ flexWrap: "wrap", mt: 5 }}>
+        <Flex sx={{ flexWrap: "wrap", mt: 5, justifyContent: "space-between" }}>
           <Box
             sx={{
               flex: ["0 100%", "0 48%", "0 46%"],
@@ -76,7 +76,6 @@ class RootIndex extends React.Component {
           <Box
             sx={{
               flex: ["0 100%", "0 48%", "0 46%"],
-              ml: "auto",
               color: "#282828",
               border: "1px solid",
               p: 3,
